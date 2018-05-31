@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pt.esas.bibliadolinuxv2.PermissoesFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="89dp"
+                android:gravity="center"
+                android:text="Tutorial #4 - Permissões"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="As permissões do Linux ditam 3 coisas que se pode fazer com um arquivo:\n\nler (read)\nescrever (write)\nexecutar (execute).\n\nEles são referidos no Linux por uma única letra cada."
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/rwx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:text="\u2022 r (read) - Pode-se ver o conteúdo do ficheiro.\n\u2022 w (write) - Pode-se alterar o conteúdo do ficheiro.\n\u2022 x (execute) - Pode-se executar o ficheiro."
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Para cada ficheiro, definimos 3 tipos de pessoas para os quais podemos especificar permissões:"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textview10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:text="\u2022 owner / user (dono, criador do ficherio) - a pessoa que criou o ficheiro.\n\u2022 group (groupo) - cada ficheiro pertence a um único grupo.\n\u2022 others (outros) - todos os outros utilizadores que não estão no grupo ou no proprietário."
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Para ver as permissões de um ficheiro / pasta, usamos a opção de o comando ls com o atributo -l."
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/ls"
+                android:layout_width="245dp"
+                android:layout_height="181dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Vejamos:\n\n\u2022 tanto o owner / user (criador do ficheiro) como o group (grupo) possuem a permissão para ler (read) e escrever (write), mas não para executar (execute).\n\n\u2022 O resto (others) só pode ler o ficheiro."
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Por ultimo, vamos aprender a como alterar as permissões.\nPara alterar as permissões de um ficheiro ou pasta, usamos um comando chamado &quot;chmod&quot; e é usado da seguinte maneira:\n\n\u2022 chmod [permissões] [caminho].\n\nPara ajudar nas permissões, existe esta tabela binária que ajudará no momento de adicionar / remover permissões:"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/tabela"
+                android:layout_width="114dp"
+                android:layout_height="181dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Vamos entender a tabela: \n\n\t\t\u2022 O zero significa que não há permissão para nada.\n\t\t\u2022 O um tem permissão de executar.\n\t\t\u2022 O dois tem permissão para escrever.\n\t\t\u2022 Por assim a diante...\n\t\t\nImaginemos que tenho um ficheiro sem permissões e quero que todos tenho permissões para tudo. O comando a usar será: \n\n\t\t\u2022 chmod 777 [ficheiro / pasta].\n\nCada número equivale ao UGO (user, group e others). Se quisesse dar todas as permissões só ao utilizador, usava 700, ao invés de 777."
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/creditos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:textColorLink="@color/colorPrimaryDark"
+                android:text="" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

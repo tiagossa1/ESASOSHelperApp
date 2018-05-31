@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pt.esas.bibliadolinuxv2.cdFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="89dp"
+                android:gravity="center"
+                android:text="Tutorial #2 - Mudar de diretoria e limpar a consola."
+                android:textColor="@color/colorPrimary"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="O comando cd (change directory) significa alterar diretoria de trabalho. A diretoria de trabalho pode ser considerada como a diretoria em que está, ou seja, a sua posição atual.\nPara alterar a mesma, basta fazer:\n\ncd diretoria"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/cd"
+                android:layout_width="321dp"
+                android:layout_height="102dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Caso tenha seguido tutorial a tutorial, deve ter reparado que o terminal (ou consola) já está a ficar cheia de comandos.\nPara limpar a mesma, basta escrever:\n\nclear"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/clear"
+                android:layout_width="302dp"
+                android:layout_height="181dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

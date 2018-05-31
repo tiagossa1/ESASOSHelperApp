@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CuriosidadesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="1 - A primeira versão do Kernel Linux foi escrita por um jovem universitário finlandês de 21 anos, Linus Benedict Torvalds.\n\n
+2 - Atualmente, apenas 2% do código do Linux é escrito por Torvalds.\n\n
+3 - Um homem chamado William Della Croce Jr. registou o nome &quot;Linux&quot; e exigiu royalties para usar o seu nome e marca. No entanto, ele concordou em devolver a marca à Linus mais tarde.\n\n
+4 - Existem mais de 300 distribuições Linux ativas atualmente, sendo que o Debian (Ubuntu) é o &quot;pai&quot; da maioria.\n\n
+5 - O filme &quot;Avatar&quot; foi produzido usando o Linux e programas de código aberto.\n\n
+6 - Uma versão não modificada do Kernel Linux é chamada de &quot;Vanilla&quot;.\n\n
+7 - O Linux é utilizado para controlar o Grande Colisor de Hadrões.\n\n
+8 - A Google é responsável por 1,1% do código do Linux.\n\n
+9 - Os efeitos visuais de Titanic que levaram um Oscar foram feitos com máquinas Linux.\n\n
+10 - O Linux não é um sistema operativo completo, é apenas o Kernel (núcleo).\n\n
+11 - A maior parte do código do Linux é escrita na linguagem C.\n\n
+12 - O código do Kernel tem mais de 22 milhões de linhas.\n\n
+13 - Os submarinos militares dos EUA usam Linux.\n\n
+14 - A NASA usa Linux na ISS (Estação Espacial Internacional).\n\n
+15 - Os rovers que exploram a superfície de Marte são controlados por Linux.\n\n
+16 - O Linux é o núcleo do sistema operativo mais utilizado por utilizadores finais, o Android, com 1,5 bilhão de utilizadores.\n\n
+17 - O Linux é utilizado em servidores das principais companhias de tecnologia do mundo como Facebook, Google, Amazon, entre outros, inclusive a Microsoft.\n\n
+18 - A Intel, Red Hat, Linaro e IBM são as principais contribuidoras do Kernel Linux.\n\n
+19 - O Linux está em 99% dos Supercomputadores do mundo.\n\n
+20 - O &quot;Tux&quot; é o nome do pinguim do Linux e foi Linus Torvalds que deu a palavra final para definir a sua aparência, &quot;quero um pinguim com cara de satisfeito depois de um banquete&quot;.\n\n
+21 - A Apple tentou contratar Linus Torvalds e ele rejeitou.\n\n
+22 - A primeira distribuição Linux comercial foi o Yggdrasil Linux/GNU/X.\n\n
+23 - A distribuição comunitária mais antiga é o Slackware, que ainda está em atividade inclusive.\n\n
+24 - Os nomes das versões do Kernel são normalmente alguma piada ou algo que não faz muito sentido. Por exemplo, o nome da versão 4.7 RC é &quot;Psychotic Stoned Sheep&quot;.\n\n
+25 - O Linux tem mais de 13 mil programadores espalhados ao redor do mundo, sendo assim, o maior projeto de desenvolvimento colaborativo de software da história."
+
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/creditos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:textColorLink="@color/colorPrimaryDark"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="196dp"
+            android:layout_height="153dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Linus Torvald" />
+
+    </LinearLayout>
+
+</ScrollView>

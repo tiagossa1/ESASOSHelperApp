@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbuttonBug"
+            android:theme="@style/RadioButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_weight="1"
+            android:text="Reportar um bug" />
+
+        <RadioButton
+            android:id="@+id/rbuttonThanks"
+            android:theme="@style/RadioButtonStyle"
+            android:layout_width="423dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="Outro tipo de email" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnEnviarEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENVIAR EMAIL" />
+</LinearLayout>

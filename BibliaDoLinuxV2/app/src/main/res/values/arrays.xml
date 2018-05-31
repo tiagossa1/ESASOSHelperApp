@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="welcome">
+        <item>Olá.</item>
+        <item>Bem-vindo ao esasOS Helper!</item>
+        <item>Esperemos que gostes... tanto como nós!</item>
+        <item>Para veres o que temos reservado para ti, carrega no botão em cima.</item>
+        <item>Manda-nos um email! Carrega nos três traços horizontais > Dúvidas?</item>
+        <item>Diverte-te!</item>
+    </string-array>
+</resources>

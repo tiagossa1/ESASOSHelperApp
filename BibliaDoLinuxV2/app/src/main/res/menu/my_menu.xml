@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/inicio_id"
+        android:icon="@drawable/ic_home"
+        android:title="INICIO" />
+    <item
+        android:id="@+id/linux_id"
+        android:icon="@drawable/icon_esasos"
+        android:title="LINUX" />
+    <item
+        android:id="@+id/curiosidades_id"
+        android:icon="@mipmap/ic_curiosidades"
+        android:title="CURIOSIDADES" />
+    <item
+        android:id="@+id/esasos_id"
+        android:icon="@mipmap/ic_tree"
+        android:title="ESASOS" />
+    <item
+        android:id="@+id/tutoriais_id"
+        android:icon="@drawable/ic_book"
+        android:title="TUTORIAIS" />
+
+</menu>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LinuxFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="O que é o Linux?"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/whiteGray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:text="\nLinux é um Sistema Operativo, assim como o Windows e o Mac OS, que possibilita a execução de programas num computador e em outros dispositivos. O Linux pode ser livremente modificado.
+
+O Kernel é um conjunto de instruções que controla como será usado o processador, a memória, o disco e dispositivos. É o software presente em todos os sistemas. O Kernel Linux foi criado pelo Linus Torvalds, com a primeira versão oficial lançada em 1991.\n"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/kernel"
+            android:layout_width="232dp"
+            android:layout_height="164dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:text="\nO Kernel por si só não tem utilidade prática. É preciso uma série de programas adicionais para o seu uso efetivo, como interpretadores de comandos, compiladores para que seja possível o desenvolvimento de novos programas, editores de textos e assim por diante.
+
+Concluindo, o Linux é o nome do Kernel e GNU/Linux do sistema operativo (kernel + programas essenciais). Mas pela simplicidade, Linux é o termo largamente aceito para definição do sistema operativo do 'pinguim'.\n"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="left"
+            android:text="Linux está em todo lugar!"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/whiteGray" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:text="\nO desenvolvimento do sistema operativo Linux contou com a colaboração de milhares de programadores desde então, e novas aplicações foram adicionadas que permitiram o uso do sistema nos mais diversos dispositivos e fins.
+
+O router, por exemplo, muito provavelmente utiliza Linux. O Facebook e a Netflix estão hospedados em (servidores) Linux. O sistema operativo Android é baseado em Linux e de forma tão intima que muitos o consideram Linux.\n"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="143dp"
+            android:layout_height="201dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="left"
+            android:text="Distribuições Linux"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/whiteGray" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:text="\nUma distribuição é um projeto com objetivo de empacotar um conjunto de aplicações Linux, com padrões estabelecidos, num assistente para instalação.
+
+Cada distribuição é criada para um perfil de uso. Há algumas voltadas à simplicidade, outras para servidores, computadores mais antigosm, etc. A escolha dependerá da necessidade.
+
+Assim, para iniciar no Linux, a primeira decisão deve ser qual distribuição usar e então desfrutar do novo universo de possibilidades."
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

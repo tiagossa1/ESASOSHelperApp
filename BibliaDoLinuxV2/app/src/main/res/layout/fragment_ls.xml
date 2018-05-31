@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="pt.esas.bibliadolinuxv2.lsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/backgroundcolor"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="89dp"
+                android:gravity="center"
+                android:text="Tutorial #1 - Listar ficheiros e pastas / Criar uma pasta"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Quando faz login pela primeira vez, a sua diretoria de trabalho será o /home.\nA sua diretoria pessoal tem o mesmo nome do seu nome de utilizador, por exemplo, aluno, e é onde os seus ficheiros e subdiretorias pessoais são guardados.\nO comando ls lista o conteúdo da diretoria atual."
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/ls"
+                android:layout_width="302dp"
+                android:layout_height="181dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Pode haver fcheiros ocultos na diretoria em que está a trabalhar e o comando ls não os retornará. Para isso terá que fazer ls -a:"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/lsa"
+                android:layout_width="302dp"
+                android:layout_height="181dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/textviewMKDIR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:text="Agora, vamos criar uma subdiretoria (pasta) na diretoria em que está a trabalhar.\nNeste exemplo, vamos criar uma pasta chamada Teste.\nPara isso, escrevemos mkdir Teste. Depois, faça um ls para ver a sua nova pasta!"
+                />
+
+            <ImageView
+                android:id="@+id/mkdir"
+                android:layout_width="344dp"
+                android:layout_height="128dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/creditos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

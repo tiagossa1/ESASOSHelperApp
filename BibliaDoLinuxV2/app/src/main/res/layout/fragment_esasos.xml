@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".esasosFragment">
+
+
+    <LinearLayout
+        android:id="@+id/linearLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="left"
+            android:text="O que é o esasOS?"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/whiteGray" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:text="\nO esasOS é um sistema operativo criado por dois alunos da escola Alberto Sampaio, no âmbito da PAP (Prova de Aptidão Profissional).\n\nO objetivo deste novo sistema é a simplicidade, elegancia e liberdade.\n"
+            android:textAlignment="viewStart"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview6"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="left"
+            android:text="Programas"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/whiteGray" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:text="\nEste sistema operativo conta com todos os programas que os alunos conseguem encontrar no Windows:
+\n\n&#8226; Arduino\n&#8226; Blender\n&#8226; Atom *\n&#8226; Chromium\n&#8226; Dia\n&#8226; Firefox\n&#8226; GIMP\n&#8226; LibreCAD\n&#8226; Monodevelop\n&#8226; Notepaddqq\n&#8226; XAMPP **\n \n* Decidimos trocar o Brackts pelo Atom, para aumentar a diversidade.\n
+** Apesar de instalado, precisa de password para funcionar.\n"
+            android:textAlignment="textStart"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/textview7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="left"
+            android:text="@string/video"
+            android:linksClickable="true"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

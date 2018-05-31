@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- Light Theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#C62B2B</item>
+        <item name="colorPrimaryDark">#9E2323</item>
+        <item name="colorAccent">#D9792D</item>
+    </style>
+
+    <style name="RadioButtonStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SwitchTheme" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlActivated">@color/colorAccent</item>
+    </style>
+
+</resources>

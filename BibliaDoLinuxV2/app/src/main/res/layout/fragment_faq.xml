@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="pt.esas.bibliadolinuxv2.FaqFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/backgroundcolor"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10sp"
+                android:layout_marginStart="10sp"
+                android:text="Para que serve esta aplicação?"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10sp"
+                android:layout_marginStart="10sp"
+                android:text="\nPara entender esta aplicação, é preciso conhecer o esasOS.\nNós criamos uma parte reservada sobre a explicação do sistema.\nMuito rapidamente, esta aplicação serve para ajudar quem quer saber mais sobre o nosso sistema operativo feito para a escola Alberto Sampaio.\n"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10sp"
+                android:layout_marginStart="10sp"
+                android:text="OK, mas qual é a necessidade de fazer uma aplicação própria para o esasOS?"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10sp"
+                android:layout_marginStart="10sp"
+                android:text="\nQuer esta aplicação, quer o esasOS, foram criados para a PAP do nosso 12º ano.\nComo não nos limitamos a fazer o básico, decidimos investir numa aplicação para mostrar o que sabemos fazer no Android Studio.\n"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10sp"
+                android:layout_marginStart="10sp"
+                android:text="Também gostaria de fazer uma aplicação para a minha PAP. Têm algum conselho?"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10sp"
+                android:layout_marginStart="10sp"
+                android:text="\nNão faças tudo à última da hora e pesquisa bastante!\nTens o código desta app no GitHub.\n"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textview7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="@string/github"
+                android:linksClickable="true"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10sp"
+                android:layout_marginStart="10sp"
+                android:text="\nEncontrei um bug. Como vos contacto?"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10sp"
+                android:layout_marginStart="10sp"
+                android:text="\nNos três pontos, tem uma opção chamada &quot;Manda-nos um email!&quot;.\nEscolha a opção de reportar um bug.\n"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

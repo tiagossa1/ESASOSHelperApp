@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pt.esas.bibliadolinuxv2.cpFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="89dp"
+                android:gravity="center"
+                android:text="Tutorial #3 - Copiar, mover e eliminar ficheiros"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="O que vamos fazer agora é pegar um ficheiro da sua diretoria e usar o comando cp para copiá-lo para outro lugar qualquer (neste exemplo, poderá ser o Ambiente de Trabalho).\n\nPara isso fazemos:\n\ncp ficheiro1 ficheiro2 (lembrando que tem de ser o caminho completo)"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/cp"
+                android:layout_width="308dp"
+                android:layout_height="158dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Para mover, o comando será o mesmo, mudando o cp (copy) para mv (move), ficando assim:"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/mv"
+                android:layout_width="313dp"
+                android:layout_height="161dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/textviewMKDIR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:text="Agora, vamos eliminar tanto o ficheiro comn a pasta.\nPara eliminar o ficheiro, fazemos\n\nrm ficheiro.\n\nPara eliminar a pasta, precisamos de fazer:\n\nrm -rf (eliminar recursivamente + forçar a eliminação) pasta1."
+                />
+
+            <ImageView
+                android:id="@+id/rm"
+                android:layout_width="318dp"
+                android:layout_height="181dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

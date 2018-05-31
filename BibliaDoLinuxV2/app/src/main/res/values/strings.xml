@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">esasOS</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="video">&lt;a href="http://www.youtube.com">\DEMO DO SISTEMA&lt;/a></string>
+    <string name="github">&lt;a href="https://github.com/tiagossa1/esasOSHelper">\GITHUB&lt;/a></string>
+
+</resources>
