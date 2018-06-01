@@ -15,13 +15,18 @@
         android:textSize="25sp"
         android:textStyle="bold" />
 
+    <RelativeLayout
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <Switch
         android:id="@+id/musicswitch"
         android:layout_width="385dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|right"
         android:layout_marginBottom="15dp"
         android:checked="true"
         android:gravity="left"
         android:textSize="15sp" />
+
+    </RelativeLayout>
 </FrameLayout>

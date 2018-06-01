@@ -23,7 +23,7 @@
                 android:layout_marginStart="10sp"
                 android:text="Para que serve esta aplicação?"
                 android:textColor="@color/colorPrimary"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 android:textStyle="italic|bold" />
 
             <TextView
@@ -43,7 +43,7 @@
                 android:layout_marginStart="10sp"
                 android:text="OK, mas qual é a necessidade de fazer uma aplicação própria para o esasOS?"
                 android:textColor="@color/colorPrimary"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 android:textStyle="italic|bold" />
 
             <TextView
@@ -63,7 +63,7 @@
                 android:layout_marginStart="10sp"
                 android:text="Também gostaria de fazer uma aplicação para a minha PAP. Têm algum conselho?"
                 android:textColor="@color/colorPrimary"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 android:textStyle="italic|bold" />
 
             <TextView
@@ -89,13 +89,14 @@
 
             <TextView
                 android:id="@+id/textView18"
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10sp"
                 android:layout_marginStart="10sp"
-                android:text="\nEncontrei um bug. Como vos contacto?"
+                android:text="Encontrei um bug. Como vos contacto?"
                 android:textColor="@color/colorPrimary"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 android:textStyle="italic|bold" />
 
             <TextView
