@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
                         String[] to = {"tiagosaesas@gmail.com"};
                         String corpoMensagem = "";
                         intent.putExtra(Intent.EXTRA_EMAIL, to);
-                        intent.putExtra(Intent.EXTRA_SUBJECT, "Email - esasOS Helper.");
+                        intent.putExtra(Intent.EXTRA_SUBJECT, "Email - esasOS Helpera.");
                         intent.putExtra(Intent.EXTRA_TEXT, corpoMensagem);
                         intent.setType("message/rfc822");
                         chooser=Intent.createChooser(intent, "Escolha a aplicação para enviar o email");
