@@ -9,11 +9,14 @@ import android.support.v7.app.AppCompatActivity;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.sql.Time;
 import java.text.DateFormat;
+import java.text.Format;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
@@ -23,25 +26,22 @@ public class SplashScreenActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         try {
+            SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss");
+            Format formatter = new SimpleDateFormat("MMMM");
+            String s = formatter.format(new Date());
+
             databaseReference = FirebaseDatabase.getInstance().getReference("loggedDevices");
-            String id = databaseReference.push().getKey();
+            Calendar cal = Calendar.getInstance();
+
             String model = Build.MODEL;
             String aVersion = Build.VERSION.RELEASE;
-
-            int hour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
-            int minutes = Calendar.getInstance().get(Calendar.MINUTE);
-            int seconds = Calendar.getInstance().get(Calendar.SECOND);
-            String time = hour + ":" + minutes + ":" + seconds;
-
-            Date today = new Date();
-            Calendar cal = Calendar.getInstance();
-            cal.setTime(today);
+            String time = format.format(cal.getTime());
 
             DateFormat df = new SimpleDateFormat("dd/MM/yy");
             String date = df.format(new Date());
 
-            Telemetry telemetry = new Telemetry(id, model, aVersion, time, date);
-            databaseReference.child(id).setValue(telemetry);
+            Telemetry telemetry = new Telemetry(model, aVersion, time, date);
+            databaseReference.child(s).push();
         } catch (Exception e) {
             e.printStackTrace();
         }

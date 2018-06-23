@@ -8,6 +8,8 @@
 
     <com.tomer.fadingtextview.FadingTextView
         android:id="@+id/ftextview"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -21,6 +23,8 @@
         android:layout_height="match_parent">
     <Switch
         android:id="@+id/musicswitch"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_width="385dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
