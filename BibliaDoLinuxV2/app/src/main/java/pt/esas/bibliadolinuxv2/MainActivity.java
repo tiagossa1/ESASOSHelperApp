@@ -29,6 +29,9 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import java.io.IOException;
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
@@ -41,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
     MediaPlayer player;
     Intent intent;
     boolean userWantsMusic;
+    ArrayList<String> mysongs = new ArrayList<>();
 
     public void CustomAlertEmail() {
         dialogEmail = new Dialog(MainActivity.this);
@@ -143,7 +147,16 @@ public class MainActivity extends AppCompatActivity {
 
         SharedPreferences prefs = getSharedPreferences("pt.esas.bibliadolinuxv2", 0);
         userWantsMusic = prefs.getBoolean("MUSIC_KEY", true);
-        player = MediaPlayer.create(this, R.raw.track1);
+        //player = MediaPlayer.create(this, R.raw.track1);
+        mysongs.add("https://www.naijaexclusive.net/wp-content/uploads/2017/08/XXXTENTACION_-_Jocelyn_Flores_NaijaExclusive.net.mp3");
+        player = new MediaPlayer();
+
+        try {
+            player.setDataSource(MainActivity.this, Uri.parse(mysongs.get(0)));
+            player.prepare();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         if (userWantsMusic == true) {
             player.start();
