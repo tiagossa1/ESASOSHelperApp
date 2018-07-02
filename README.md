@@ -19,7 +19,7 @@ Esta app conta com:
 0. Design ✔️
 1. Splash Screen ✔️
 2. Navigation Drawer ✔️
-3. Adicionar informação nos fragmentos
+3. Adicionar informação nos fragmentos ️✔️
 
 Aplicação feita para a PAP (Prova de Aptidão Profissional).
 
@@ -42,6 +42,6 @@ It has:
 0. Design ✔️
 1. Splash Screen ✔️
 2. Navigation Drawer ✔️
-3. Add info in fragments.
+3. Add info in fragments. ✔️
 
 App made for PPA (Proof of Professional Aptitude).
