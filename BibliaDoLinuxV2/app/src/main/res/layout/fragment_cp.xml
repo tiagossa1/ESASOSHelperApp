@@ -16,6 +16,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="89dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
                 android:gravity="center"
                 android:text="Tutorial #3 - Copiar, mover e eliminar ficheiros"
                 android:textColor="@color/colorPrimary"
@@ -35,8 +37,8 @@
 
             <ImageView
                 android:id="@+id/cp"
-                android:layout_width="308dp"
-                android:layout_height="158dp"
+                android:layout_width="307dp"
+                android:layout_height="145dp"
                 android:layout_gravity="center"
                 android:scaleType="fitXY" />
 
@@ -54,7 +56,7 @@
             <ImageView
                 android:id="@+id/mv"
                 android:layout_width="313dp"
-                android:layout_height="161dp"
+                android:layout_height="155dp"
                 android:layout_gravity="center"
                 android:scaleType="fitXY" />
 
@@ -72,9 +74,10 @@
 
             <ImageView
                 android:id="@+id/rm"
-                android:layout_width="318dp"
-                android:layout_height="181dp"
+                android:layout_width="310dp"
+                android:layout_height="170dp"
                 android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
                 android:scaleType="fitXY" />
 
         </LinearLayout>

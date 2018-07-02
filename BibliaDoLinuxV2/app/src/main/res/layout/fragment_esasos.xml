@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".esasosFragment">
 
-
     <LinearLayout
         android:id="@+id/linearLay"
         android:layout_width="match_parent"
@@ -16,7 +15,8 @@
             android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="38dp"
-            android:layout_marginLeft="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
             android:gravity="left"
             android:text="O que é o esasOS?"
             android:textColor="@color/colorPrimary"
@@ -36,18 +36,101 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="5dp"
-            android:text="\nO esasOS é um sistema operativo criado por dois alunos da escola Alberto Sampaio, no âmbito da PAP (Prova de Aptidão Profissional).\n\nO objetivo deste novo sistema é a simplicidade, elegancia e liberdade.\n"
+            android:layout_marginBottom="10dp"
+            android:text="O esasOS é um sistema operativo criado por dois alunos da escola Alberto Sampaio, no âmbito da PAP (Prova de Aptidão Profissional).\n\nO objetivo deste novo sistema é dar a conhecer aos alunos o ambiente Linux / Unix."
             android:textAlignment="viewStart"
             android:textSize="15sp"
             android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/desktop"
+            android:layout_width="316dp"
+            android:layout_height="176dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitXY" />
 
         <TextView
             android:id="@+id/textview6"
             android:layout_width="match_parent"
             android:layout_height="39dp"
-            android:layout_marginLeft="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
             android:gravity="left"
-            android:text="Programas"
+            android:text="Programas pré-instalados"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/whiteGray" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:text="Este sistema operativo conta com todos os programas que os alunos conseguem encontrar no Windows:
+\n&#8226; Arduino\n&#8226; Blender\n&#8226; Atom *\n&#8226; Chromium\n&#8226; Dia\n&#8226; Firefox\n&#8226; GIMP\n&#8226; LibreCAD\n&#8226; Monodevelop\n&#8226; Notepaddqq\n&#8226; Okular\n&#8226; VirtualBox\n&#8226; VLC."
+            android:textAlignment="textStart"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/textview8"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:gravity="left"
+            android:text="Adições ao Linux Mint"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/whiteGray" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:text="Sendo a nossa distribuição dirigida para a escola Alberto Sampaio, nós não adicionamos nada de novo que não se veja em outras distribuições, só instalamos os programadas ditos a cima e uns comandos novos:\n\n&#8226; esasos \n&#8226; site \n&#8226; software."
+            android:textAlignment="textStart"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <ImageView
+            android:id="@+id/comandos"
+            android:layout_width="251dp"
+            android:layout_height="123dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/textview10"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:gravity="left"
+            android:text="Comandos customizados"
             android:textColor="@color/colorPrimary"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -65,25 +148,36 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="5dp"
-            android:text="\nEste sistema operativo conta com todos os programas que os alunos conseguem encontrar no Windows:
-\n\n&#8226; Arduino\n&#8226; Blender\n&#8226; Atom *\n&#8226; Chromium\n&#8226; Dia\n&#8226; Firefox\n&#8226; GIMP\n&#8226; LibreCAD\n&#8226; Monodevelop\n&#8226; Notepaddqq\n&#8226; XAMPP **\n \n* Decidimos trocar o Brackts pelo Atom, para aumentar a diversidade.\n
-** Apesar de instalado, precisa de password para funcionar.\n"
+            android:layout_marginBottom="10dp"
+            android:text="Adicionamos três comandos novos ao esasOS.\n\nO comando 'esasOS' escreve no terminal uma pequena definição de o que seria o esasOS.\n\nO comando 'software' imprime no ecrã todo o software adicionado ao esasOS.\n\nPor último, o comando 'site' redireciona o utilizado ao site oficial do esasOS."
             android:textAlignment="textStart"
             android:textSize="15sp"
             android:textStyle="bold"
             tools:ignore="RtlCompat" />
 
-        <TextView
-            android:id="@+id/textview7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:gravity="left"
-            android:text="@string/video"
-            android:linksClickable="true"
-            android:textColorLink="@color/colorPrimary"
-            android:textSize="25sp"
-            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/esasos"
+            android:layout_width="334dp"
+            android:layout_height="179dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/software"
+            android:layout_width="334dp"
+            android:layout_height="179dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/site"
+            android:layout_width="334dp"
+            android:layout_height="179dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitXY" />
 
     </LinearLayout>
 </ScrollView>
