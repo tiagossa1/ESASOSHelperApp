@@ -21,6 +21,7 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -29,8 +30,16 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.Format;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
     MediaPlayer player;
     Intent intent;
     boolean userWantsMusic;
-    ArrayList<String> mysongs = new ArrayList<>();
+    DatabaseReference databaseReference;
 
     public void CustomAlertEmail() {
         dialogEmail = new Dialog(MainActivity.this);
@@ -143,6 +152,33 @@ public class MainActivity extends AppCompatActivity {
         {
             Toast.makeText(getBaseContext(), "Esta aplicação precisa de internet para funcionar.", Toast.LENGTH_SHORT).show();
             finishAndRemoveTask();
+        }
+
+        try {
+            Calendar cal = Calendar.getInstance();
+            String[] monthName = {"January", "February",
+                    "March", "April", "May", "June", "July",
+                    "August", "September", "October", "November",
+                    "December"};
+            String month = monthName[cal.get(Calendar.MONTH)];
+
+            databaseReference = FirebaseDatabase.getInstance().getReference(month);
+
+            String id = databaseReference.push().getKey();
+            String aVersion = Build.VERSION.RELEASE;
+            String model = Build.MODEL;
+
+            SimpleDateFormat mdformat_alt = new SimpleDateFormat("HH:mm:ss");
+            String strDate = mdformat_alt.format(cal.getTime());
+
+            SimpleDateFormat mdformat = new SimpleDateFormat("yyyy/MM/dd ");
+            String date = mdformat.format(cal.getTime());
+
+            Telemetry telemetry = new Telemetry(model, aVersion, strDate ,date);
+            databaseReference.child(id).setValue(telemetry);
+
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
         SharedPreferences prefs = getSharedPreferences("pt.esas.bibliadolinuxv2", 0);
