@@ -39,19 +39,21 @@ public class esasosFragment extends Fragment {
         ImageView c_site = v.findViewById(R.id.site);
         ImageView c_esasos = v.findViewById(R.id.esasos);
         ImageView c_software = v.findViewById(R.id.software);
+        ImageView c_whatsnew = v.findViewById(R.id.whatsnew);
 
-        Glide.with(this).load("https://i.imgur.com/fidKKHo.png").into(desktop);
-        Glide.with(this).load("https://i.imgur.com/oSyS6qr.png").into(comandos);
-        Glide.with(this).load("https://i.imgur.com/M7iSsHW.png").into(c_site);
-        Glide.with(this).load("https://i.imgur.com/0kYNgz7.png").into(c_esasos);
-        Glide.with(this).load("https://i.imgur.com/Z9rsj5Q.png").into(c_software);
+        Glide.with(this).load("https://i.imgur.com/43l2Duv.png").into(desktop);
+        Glide.with(this).load("https://i.imgur.com/O7PnZ1u.png").into(comandos);
+        Glide.with(this).load("https://i.imgur.com/hELU9aS.png").into(c_site);
+        Glide.with(this).load("https://i.imgur.com/6tg8fTi.png").into(c_esasos);
+        Glide.with(this).load("https://i.imgur.com/qCVBI2y.png").into(c_software);
+        Glide.with(this).load("https://i.imgur.com/rBeiQ7H.png").into(c_whatsnew);
 
         c_site.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent browserIntent = new Intent(
                         Intent.ACTION_VIEW,
-                        Uri.parse("https://i.imgur.com/M7iSsHW.png"));
+                        Uri.parse("https://i.imgur.com/hELU9aS.png"));
                 startActivity(browserIntent);
             }
         });

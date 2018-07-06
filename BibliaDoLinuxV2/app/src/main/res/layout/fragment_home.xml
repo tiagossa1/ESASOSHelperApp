@@ -6,6 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
 
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Aplicação feita para a PAP - 12/07/2018." />
+
     <com.tomer.fadingtextview.FadingTextView
         android:id="@+id/ftextview"
         android:layout_marginLeft="5dp"

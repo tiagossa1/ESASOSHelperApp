@@ -138,25 +138,16 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         if (isNetworkAvailable() == false)
         {
-            Toast.makeText(this, "Esta aplicação precisa de internet.",
-                    Toast.LENGTH_LONG).show();
+            Toast.makeText(getBaseContext(), "Esta aplicação precisa de internet para funcionar.", Toast.LENGTH_SHORT).show();
             finishAndRemoveTask();
         }
 
         SharedPreferences prefs = getSharedPreferences("pt.esas.bibliadolinuxv2", 0);
         userWantsMusic = prefs.getBoolean("MUSIC_KEY", true);
-        //player = MediaPlayer.create(this, R.raw.track1);
-        mysongs.add("https://www.naijaexclusive.net/wp-content/uploads/2017/08/XXXTENTACION_-_Jocelyn_Flores_NaijaExclusive.net.mp3");
-        player = new MediaPlayer();
-
-        try {
-            player.setDataSource(MainActivity.this, Uri.parse(mysongs.get(0)));
-            player.prepare();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        player = MediaPlayer.create(this, R.raw.lofisong);
 
         if (userWantsMusic == true) {
             player.start();

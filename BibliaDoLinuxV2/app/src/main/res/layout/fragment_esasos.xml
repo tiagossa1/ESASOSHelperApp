@@ -77,7 +77,7 @@
             android:layout_marginRight="5dp"
             android:layout_marginBottom="10dp"
             android:text="Este sistema operativo conta com todos os programas que os alunos conseguem encontrar no Windows:
-\n&#8226; Arduino\n&#8226; Blender\n&#8226; Atom *\n&#8226; Chromium\n&#8226; Dia\n&#8226; Firefox\n&#8226; GIMP\n&#8226; LibreCAD\n&#8226; Monodevelop\n&#8226; Notepaddqq\n&#8226; Okular\n&#8226; VirtualBox\n&#8226; VLC."
+\n&#8226; Arduino\n&#8226; Blender\n&#8226; Chromium\n&#8226; Dia\n&#8226; Firefox\n&#8226; GIMP\n&#8226; LibreCAD\n&#8226; Monodevelop\n&#8226; Okular\n&#8226; VS Code\n&#8226; Virtualbox."
             android:textAlignment="textStart"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -109,7 +109,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="5dp"
             android:layout_marginBottom="10dp"
-            android:text="Sendo a nossa distribuição dirigida para a escola Alberto Sampaio, nós não adicionamos nada de novo que não se veja em outras distribuições, só instalamos os programadas ditos a cima e uns comandos novos:\n\n&#8226; esasos \n&#8226; site \n&#8226; software."
+            android:text="Sendo a nossa distribuição dirigida para a escola Alberto Sampaio, nós não adicionamos nada de novo que não se veja em outras distribuições, só instalamos os programadas ditos a cima e uns comandos novos:\n\n&#8226; esasos \n&#8226; site \n&#8226; software \n&#8226; terminalmods"
             android:textAlignment="textStart"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -118,7 +118,7 @@
         <ImageView
             android:id="@+id/comandos"
             android:layout_width="251dp"
-            android:layout_height="123dp"
+            android:layout_height="81dp"
             android:layout_gravity="center"
             android:layout_marginBottom="10dp"
             android:scaleType="fitXY" />
@@ -149,7 +149,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="5dp"
             android:layout_marginBottom="10dp"
-            android:text="Adicionamos três comandos novos ao esasOS.\n\nO comando 'esasOS' escreve no terminal uma pequena definição de o que seria o esasOS.\n\nO comando 'software' imprime no ecrã todo o software adicionado ao esasOS.\n\nPor último, o comando 'site' redireciona o utilizado ao site oficial do esasOS."
+            android:text="Adicionamos quatro comandos novos ao esasOS.\n\nO comando 'esasOS' escreve no terminal uma pequena definição de o que seria o esasOS.\n\nO comando 'software' imprime no ecrã todo o software adicionado ao esasOS.\n\nO comando 'site' redireciona o utilizado ao site oficial do esasOS.\n\nPor último, o comando 'terminalmods' imprime algumas alterações no terminal."
             android:textAlignment="textStart"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -173,6 +173,14 @@
 
         <ImageView
             android:id="@+id/site"
+            android:layout_width="334dp"
+            android:layout_height="179dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/whatsnew"
             android:layout_width="334dp"
             android:layout_height="179dp"
             android:layout_gravity="center"
