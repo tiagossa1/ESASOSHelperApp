@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
     Intent intent;
     boolean userWantsMusic;
     DatabaseReference databaseReference;
+    Boolean isPaused;
 
     public void CustomAlertEmail() {
         dialogEmail = new Dialog(MainActivity.this);
@@ -184,6 +185,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences prefs = getSharedPreferences("pt.esas.bibliadolinuxv2", 0);
         userWantsMusic = prefs.getBoolean("MUSIC_KEY", true);
         player = MediaPlayer.create(this, R.raw.lofisong);
+        isPaused = !player.isPlaying();
 
         if (userWantsMusic == true) {
             player.start();
@@ -311,5 +313,23 @@ public class MainActivity extends AppCompatActivity {
         if (player.isPlaying())
             player.stop();
         super.onDestroy();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        if (player.isPlaying()) {
+            player.pause();
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        if (isPaused && userWantsMusic) {
+            player.start();
+        }
     }
 }
