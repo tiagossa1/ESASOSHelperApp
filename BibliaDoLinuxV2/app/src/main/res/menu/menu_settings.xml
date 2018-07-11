@@ -7,5 +7,5 @@
         android:title="FAQ" />
     <item
         android:id="@+id/duvidas"
-        android:title="Manda-nos um email!" />
+        android:title="Mande-nos um email!" />
 </menu>
